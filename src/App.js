@@ -1,17 +1,17 @@
 import React, {Component} from "react";
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
+import Main from './components/Main.js';
 import './App.css';
 
 export default class App extends Component {
   render() {
-      return (
+    return (
       <div>
         <Header />
-        {/* <
-        Main / > */}
+        <Main />
         <Footer />
-        
-      </div>)
-      }
+      </div>
+    )
+  }
 }
