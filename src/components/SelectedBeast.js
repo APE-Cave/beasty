@@ -6,15 +6,7 @@ import Card from 'react-bootstrap/Card';
 
 export default class SelectedBeast extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      display: false,
-    }
-  }
-
   closeModal = () => this.props.closeModal();
-
 
   render() {
     return (
