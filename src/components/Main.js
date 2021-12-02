@@ -8,7 +8,7 @@ export default class Main extends Component {
       <div>
         {
           this.props.data.map(beast => {
-            return (<HornedBeast beast={beast}/>);
+            return (<HornedBeast beast={beast} renderSelected={this.props.renderSelected}/>);
           })
         }
       </div>

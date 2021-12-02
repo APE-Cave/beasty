@@ -13,7 +13,7 @@ export default class SelectedBeast extends Component {
     }
   }
 
-  closeModal = () => this.setState({ display: false });
+  closeModal = () => this.props.closeModal();
 
 
   render() {

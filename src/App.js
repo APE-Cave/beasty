@@ -16,22 +16,17 @@ export default class App extends Component {
   }
 
   renderSelected = (beast) => {
-    this.setState({ showModal: !this.state.showModal, chosenBeast: beast });
-    // DONE change beast here
-    if (this.state.showModal) {
-       (<SelectedBeast beast={this.state.beast} show={this.state.showModal} />);
-    }
+    this.setState({ showModal: true, chosenBeast: beast });
   }
 
+  closeModal = () => this.setState({showModal: false});
   
-
   render() {
     return (
       <div>
         <Header />
-        <Main data={data} renderSelected={App.renderSelected} />
-        {
-        }
+        <Main data={data} renderSelected={this.renderSelected} />
+        <SelectedBeast beast={this.state.chosenBeast} show={this.state.showModal} closeModal={this.closeModal}/>
         <Footer />
       </div>
     )
