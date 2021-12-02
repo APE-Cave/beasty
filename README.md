@@ -7,8 +7,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Collaboration and Attribution
 
 - Thanks to Michael Metcalf for helping me dial in the syntax in Main.js (particularly with the grouping symbols and structure)
+- Special thanks to Michael Milsap for assisting me with the Bootstrap Modal component and syntax (and generally tolerating my sass)
 - Heart icons made by [Freepik](https://www.freepik.com) from [flaticon.com](https://www.flaticon.com/).
 
+## Lab 02
 ### Feature #1: Display images
 Estimate of time needed to complete: 40 min 
 Start time: 5:55pm
@@ -27,3 +29,12 @@ Start time: _____
 Finish time: _____
 Actual time needed to complete: _____
 
+## Lab 03
+### Feature #1: Display a Modal
+Estimate of time needed to complete: 1h30m
+
+Start time: 4:15pm
+
+Finish time: 12:35am
+
+Actual time needed to complete: 6.5hrs (there were breaks)
