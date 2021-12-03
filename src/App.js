@@ -12,7 +12,7 @@ export default class App extends Component {
     this.state = {
       showModal: false,
       chosenBeast: {},
-      horns: 'all'
+      horns: '3',
     }
   }
   
@@ -29,6 +29,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <h2>Selected Horns: {this.state.horns}</h2>
         <Header selectHornsNumber={this.selectHornsNumber}/> {/* pass filtering method to header*/}
         <Main data={data} horns={this.state.horns} renderSelected={this.renderSelected} />
         <SelectedBeast beast={this.state.chosenBeast} show={this.state.showModal} closeModal={this.closeModal}/>
