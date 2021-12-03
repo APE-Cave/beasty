@@ -10,12 +10,23 @@ export default class HornedBeast extends Component {
       clickCount: 0,
     }
   }
+  
+  // heartStyle = document.getElementById('heart').style;
 
-  clickHandler = () => {
+  likeHandler = () => {
     this.setState({ clickCount: this.state.clickCount + 1, });
-    console.log(this.state.clickCount);
-    this.props.renderSelected(this.props.beast); // DONE pass this beast info back to app here
+    // this.heartBouncer();
+    // setTimeout( this.heartStop, 500);
   }
+  // heartBouncer = () => {
+  //   this.heartStyle.animation = '.1s bounce 0s infinite alternate';
+  //   }
+  // heartStop = () => {
+  //   this.heartStyle.removeProperty('animation');
+  // }
+  //   click{
+  //   this.props.renderSelected(this.props.beast); // DONE pass this beast info back to app here
+  // }
 
   // DONE pass entire beast object through main to this cmpnt
   render() {
@@ -28,10 +39,10 @@ export default class HornedBeast extends Component {
             {this.props.beast.description}
           </Card.Text>
           <div>
-            <img src={heart} style={{ maxWidth: '10%', margin: '.5rem'}} alt='heart icon'/>
+            <img id='heart' src={heart} style={{ maxWidth: '10%', margin: '.5rem' }} alt='heart icon' />
             Likes: {this.state.clickCount}
           </div>
-          <Button onClick={this.clickHandler} variant="primary">Go somewhere</Button>
+          <Button onClick={this.likeHandler} variant="primary">Like Me!</Button>
         </Card.Body>
       </Card>
 
