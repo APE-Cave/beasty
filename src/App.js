@@ -12,7 +12,7 @@ export default class App extends Component {
     this.state = {
       showModal: false,
       chosenBeast: {},
-      horns: '3',
+      horns: 'all',
     }
   }
   

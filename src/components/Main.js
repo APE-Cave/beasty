@@ -28,7 +28,7 @@ export default class Main extends Component {
         <Row xs={2} sm={2} md={3} lg={5} xl={5}>
         {
           // newDataArr.map to RETURN array of componentst
-          this.newArr.map(beast => (<HornedBeast beast={beast} renderSelected={this.props.renderSelected}/>))
+          this.newArr.map((beast, idx) => (<HornedBeast key={beast.title + idx} beast={beast} renderSelected={this.props.renderSelected}/>))
         }
         </Row>
       </Container>
