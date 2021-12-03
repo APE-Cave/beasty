@@ -11,27 +11,25 @@ export default class HornedBeast extends Component {
     }
   }
 
-  clickHandler = () => {
-    this.setState({ clickCount: this.state.clickCount + 1, });
-    console.log(this.state.clickCount);
-    this.props.renderSelected(this.props.beast); // DONE pass this beast info back to app here
-  }
+  likeHandler = () => this.setState({ clickCount: this.state.clickCount + 1 });
+  showModal = () => this.props.renderSelected(this.props.beast, this.state.clickCount); // DONE pass this beast info back to app here
 
   // DONE pass entire beast object through main to this cmpnt
   render() {
     return (
       <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={this.props.beast.image_url} alt={this.props.beast.description} title={this.props.beast.title} />
+        <Card.Img variant="top" src={this.props.beast.image_url} alt={this.props.beast.description} title={this.props.beast.title} onClick={this.showModal} />
         <Card.Body>
           <Card.Title>{this.props.beast.title}</Card.Title>
           <Card.Text>
             {this.props.beast.description}
           </Card.Text>
           <div>
-            <img src={heart} style={{ maxWidth: '10%', margin: '.5rem'}} alt='heart icon'/>
-            Likes: {this.state.clickCount}
+            Likes: 
+            <img src={heart} style={{ maxHeight: '1.4em', margin: '.2rem'}} alt='heart icon'/>
+            {this.state.clickCount}
           </div>
-          <Button onClick={this.clickHandler} variant="primary">Go somewhere</Button>
+          <Button onClick={this.likeHandler} variant="primary">Like Me!</Button>
         </Card.Body>
       </Card>
 
@@ -39,7 +37,7 @@ export default class HornedBeast extends Component {
 
       // <div>
       //   <h2>{this.props.beast.title}</h2>
-      //   <img src={this.props.beast.image_url} alt={this.props.beast.description} title={this.props.beast.title} onClick={this.clickHandler} />
+      //   <img src={this.props.beast.image_url} alt={this.props.beast.description} title={this.props.beast.title} onClick={this.likeHandler} />
       //   <p>
       //     <img src={heart} alt='heart icon' />
       //     Likes: {this.state.clickCount}
