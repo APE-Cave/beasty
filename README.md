@@ -35,3 +35,10 @@ Estimate of time needed to complete: 1h30m
 Start time: 4:15pm
 Finish time: 12:35am
 Actual time needed to complete: 6.5hrs (there were breaks)
+
+## Lab 04
+### Feature #1: 
+Estimate of time needed to complete: 1h30m
+Start time: 8:15pm
+Finish time: 
+Actual time needed to complete:
