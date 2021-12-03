@@ -17,7 +17,7 @@ export default class HornedBeast extends Component {
   // DONE pass entire beast object through main to this cmpnt
   render() {
     return (
-      <Card style={{ width: '18rem' }}>
+      <Card style={{ minWidth: '18rem' }}>
         <Card.Img variant="top" src={this.props.beast.image_url} alt={this.props.beast.description} title={this.props.beast.title} onClick={this.showModal} />
         <Card.Body>
           <Card.Title>{this.props.beast.title}</Card.Title>
