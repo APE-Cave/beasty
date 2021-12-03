@@ -24,17 +24,14 @@ Finish time: 10:50pm
 Actual time needed to complete: 1h30m
 
 ### Feature 3: Bootstrap
-Estimate of time needed to complete: _____
-Start time: _____
-Finish time: _____
-Actual time needed to complete: _____
+Estimate of time needed to complete: 2hrs
+Start time: 4:00pm
+Finish time: 7:30pm
+Actual time needed to complete: 3h30m
 
 ## Lab 03
 ### Feature #1: Display a Modal
 Estimate of time needed to complete: 1h30m
-
 Start time: 4:15pm
-
 Finish time: 12:35am
-
 Actual time needed to complete: 6.5hrs (there were breaks)
