@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import heart from './img/heart.png';
+// import heart from './img/heart.png'; // TODO use or remove
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Card from 'react-bootstrap/Card';

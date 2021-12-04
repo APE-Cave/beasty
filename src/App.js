@@ -12,12 +12,13 @@ export default class App extends Component {
     this.state = {
       showModal: false,
       chosenBeast: {},
-      horns: 'all',
+      horns: '',
     }
   }
   
   selectHornsNumber = (horns) => {
-    this.setState({horns: horns})
+    this.setState({ horns: horns });
+    console.log("horns in selector", horns, "horns in App", this.state.horns);
   }
 
   renderSelected = (beast) => {
