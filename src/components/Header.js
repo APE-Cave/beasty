@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
+import HornPicker from "./HornPicker.js";
 
 export default class Header extends Component {
   render() {
@@ -11,6 +12,7 @@ export default class Header extends Component {
         {' '}
       Horned Beasties
       </Navbar.Brand>
+      <HornPicker selectHornsNumber={this.props.selectHornsNumber}/>
     </Container>
   </Navbar>
 

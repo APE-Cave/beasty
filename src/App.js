@@ -12,7 +12,13 @@ export default class App extends Component {
     this.state = {
       showModal: false,
       chosenBeast: {},
+      horns: '',
     }
+  }
+  
+  selectHornsNumber = (horns) => {
+    this.setState({ horns: horns });
+    console.log("horns in selector", horns, "horns in App", this.state.horns);
   }
 
   renderSelected = (beast) => {
@@ -24,8 +30,9 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Header />
-        <Main data={data} renderSelected={this.renderSelected} />
+        <h2>Selected Horns: {this.state.horns}</h2>
+        <Header selectHornsNumber={this.selectHornsNumber}/> {/* pass filtering method to header*/}
+        <Main data={data} horns={this.state.horns} renderSelected={this.renderSelected} />
         <SelectedBeast beast={this.state.chosenBeast} show={this.state.showModal} closeModal={this.closeModal}/>
         <Footer />
       </div>
